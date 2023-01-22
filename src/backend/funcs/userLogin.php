@@ -10,7 +10,6 @@
         $decodedResult = json_decode($result, true);
         session_start();
         $_SESSION['logName'] = $decodedResult['fname']." ".$decodedResult['lname'];
-        $_SESSION['favColor'] = 'green';
         $tmpReturn = [
             "user" => $decodedResult,
             "session_id" => session_id()
