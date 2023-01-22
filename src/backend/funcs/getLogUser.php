@@ -6,5 +6,5 @@
 
     session_id($_POST['logUser']);
     session_start();
-    echo $_SESSION['favColor'];
+    echo $_SESSION['logName'];
 ?>
