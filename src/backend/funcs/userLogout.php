@@ -1,9 +1,9 @@
 <?php
-   include '../access_control.php';
-   include '../userCRUD.php';
-   header("Access-Control-Allow-Origin: $AccessControlAllowOrigin");
-   header("Access-Control-Allow-Methods: $AccessControlAllowMethods");
-    // session_destroy();
+    include '../access_control.php';
+    include '../userCRUD.php';
+    header("Access-Control-Allow-Origin: $AccessControlAllowOrigin");
+    header("Access-Control-Allow-Methods: $AccessControlAllowMethods");
+    
     session_id($_POST['session_id']);
     session_start();
     session_destroy();
