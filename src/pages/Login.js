@@ -1,9 +1,10 @@
 import userSrv from "../services/userSrv";
 import { useNavigate } from "react-router-dom";
 import CryptoJS from "crypto-js";
+import { useState } from "react";
 
 
-function Login() {
+function Login({ setIsLogged }) {
     const navigate = useNavigate();
     const login = (e) => {
         e.preventDefault();
@@ -17,6 +18,7 @@ function Login() {
                 const encrypted = CryptoJS.AES.encrypt(response.data.session_id, "rikuhatano");
                 sessionStorage.setItem("session_id", encrypted);
                 sessionStorage.setItem("non_encripted_session_id", response.data.session_id);
+                setIsLogged(true);
                 navigate('/logged');
             } else {
                 console.log(response.data);
