@@ -29,6 +29,7 @@ function Login() {
     }
     return (
         <>
+            <h1>login</h1>
             <form onSubmit={login}>
                 <input name="email" type="email" placeholder="email" defaultValue="test@mail.com"></input>
                 <input name="password" type="password" placeholder="password" defaultValue="test"></input>
