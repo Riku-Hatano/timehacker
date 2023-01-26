@@ -1,4 +1,4 @@
-import userSrv from "../services/userSrv";
+import userSrv from "../../services/userSrv";
 
 function Register() {
     const register = (e) => {

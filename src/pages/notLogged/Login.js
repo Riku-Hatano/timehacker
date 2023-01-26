@@ -1,4 +1,4 @@
-import userSrv from "../services/userSrv";
+import userSrv from "../../services/userSrv";
 import { useNavigate } from "react-router-dom";
 import CryptoJS from "crypto-js";
 import { useState } from "react";
